@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="flex">
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="bg-gray-900 w-[400px] min-h-screen border-r border-gray-600 shadow transition-all ease-in-out duration-500">
+            <div class="flex px-5 py-5">
+                <span class="text-white text-2xl">
+                    Sidebar
+                </span>
+            </div>
+
+            <ul class="px-5 py-5 flex flex-col gap-2">
+                <span class="text-white text-sm font-light uppercase mt-3">Menu</span>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Dashboard
+                    </a>
+                </li>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-cogs"></i>
+                    Pengaturan
+                    </a>
+                </li>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-user"></i>
+                    Akun
+                    </a>
+                </li>
+
+                <!-- Another link -->
+                <span class="text-white text-sm font-light uppercase mt-3">Another Link</span>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Dashboard
+                    </a>
+                </li>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-cogs"></i>
+                    Pengaturan
+                    </a>
+                </li>
+                <li class="py-3 px-3 hover:bg-gray-600 rounded-lg transition-colors ease-in-out duration-500">
+                    <a href="#" class="text-white flex flex-row gap-3 items-center">
+                    <i class="fas fa-user"></i>
+                    Akun
+                    </a>
+                </li>
+                <!-- Another link -->
+
+                <div class="flex items-center justify-between mt-5">
+                    <div class="flex flex-col items-start gap-2">
+                        <img src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg" alt="avatar" class="w-10 h-10 rounded-full">
+                        <span class="text-white">Kelvin Wijaya</span>
+                    </div>
+
+                    <button class="px-5 py-2 rounded-lg bg-indigo-600">
+                        <i class="fas fa-sign-out text-white"></i>
+                        <span class="text-white text-sm">Logout</span>
+                    </button>
+                </div>
+            </ul>
+        </div>
+        <!-- Sidebar -->
+
+        <!-- Content -->
+        <main class="w-full">
+            <!-- Navbar -->
+            <nav class="bg-gray-900 p-4 border-b border-gray-950 flex items-center justify-between">
+                <div>
+                    <button id="sidebarToggle" class="h-10 w-10 rounded-full focus:ring-4">
+                        <i id="arrowIcon" class="fas fa-arrow-left text-white"></i>
+                    </button>
+                </div>
+
+                <span class="text-white text-lg">Navbar</span>
+            </nav>
+            <!-- Navbar -->
+        </main>
+        <!-- Content -->
+
+    </div>
+    <!-- Wrapper -->
+
+
+    <script src="main.js"></script>
+</body>
+</html>
